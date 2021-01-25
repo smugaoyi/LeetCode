@@ -1,6 +1,6 @@
 public class LeetCode215 {
 
-    class Solution {
+    static class Solution {
         public int findKthLargest(int[] nums, int k) {
             int heapSize = nums.length;
             buildMaxHeap(nums, heapSize);
@@ -23,7 +23,7 @@ public class LeetCode215 {
          * 调整
          *
          * @param a
-         * @param i 当前要调整的子树的根
+         * @param i        当前要调整的子树的根
          * @param heapSize
          */
         public void maxHeapify(int[] a, int i, int heapSize) {
@@ -49,5 +49,12 @@ public class LeetCode215 {
         }
     }
 
+    public static void main(String[] args) {
+        int[] nums = {3, 2, 1, 6, 4, 5};
+
+        Solution solution = new Solution();
+        int kthLargest = solution.findKthLargest(nums, 2);
+        System.out.println(kthLargest);// 5
+    }
 
 }
