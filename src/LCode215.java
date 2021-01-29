@@ -1,4 +1,4 @@
-public class LeetCode215 {
+public class LCode215 {
 
     static class Solution {
         public int findKthLargest(int[] nums, int k) {

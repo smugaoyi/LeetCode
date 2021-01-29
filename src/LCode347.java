@@ -3,7 +3,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.PriorityQueue;
 
-public class LeetCode347 {
+public class LCode347 {
 
     static class Solution {
         public int[] topKFrequent(int[] nums, int k) {

@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class LeetCode451 {
+public class LCode451 {
 
     static class Solution {
 
