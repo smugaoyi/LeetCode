@@ -17,7 +17,7 @@ public class LCode51 {
                     int temp = nums[i];
                     nums[i] = nums[p0];
                     nums[p0] = temp;
-                    if (p0 < p1) { //
+                    if (p0 < p1) { // 在p0小于p1时，置换0时会把1替换出来，此时需要将1置换回去
                         temp = nums[i];
                         nums[i] = nums[p1];
                         nums[p1] = temp;
@@ -25,7 +25,7 @@ public class LCode51 {
                         //swap(nums, i, p1);
                     }
                     ++p0;
-                    ++p1;
+                    ++p1;// p1也要移动
                 }
             }
         }
