@@ -22,7 +22,6 @@ public class LCode51 {
                         nums[i] = nums[p1];
                         nums[p1] = temp;
 
-                        //swap(nums, i, p1);
                     }
                     ++p0;
                     ++p1;// p1也要移动
@@ -30,11 +29,6 @@ public class LCode51 {
             }
         }
 
-        public void swap(int[] arr, int i, int j) {
-            int temp = arr[i];
-            arr[i] = arr[j];
-            arr[j] = temp;
-        }
     }
 
     public static void main(String[] args) {
