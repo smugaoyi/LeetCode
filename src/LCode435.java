@@ -14,6 +14,7 @@ public class LCode435 {
             }
 
             Arrays.sort(intervals, new Comparator<int[]>() {
+                @Override
                 public int compare(int[] interval1, int[] interval2) {
                     return interval1[1] - interval2[1];
                 }
